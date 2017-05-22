@@ -1,4 +1,4 @@
-function printElement(array) {
+function capitalize(array) {
 
     function cleanArray(actual) {
         var newArray = new Array();
@@ -12,13 +12,15 @@ function printElement(array) {
 
     array = cleanArray(array);
 
-    let n = array.pop();
-
-    for (let i = 0; i < array.length; i++) {
-
-        if(i % n == 0)
-            console.log(array[i])
+    function up(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
     }
+
+    function lower(word){
+        return word.toLowerCase();
+    }
+
+    console.log(array[0].split(" ").map(lower).map(up).join(" "));
 }
 
-printElement(['5','20','31','4','20','2', ""]);
+capitalize("Ala bala niTsa nice")

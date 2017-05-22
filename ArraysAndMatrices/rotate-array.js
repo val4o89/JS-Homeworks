@@ -1,4 +1,4 @@
-function pritnArray(array) {
+function rotate(array) {
 
     function cleanArray(actual) {
         var newArray = new Array();
@@ -12,6 +12,18 @@ function pritnArray(array) {
 
     array = cleanArray(array);
 
-    let delimiter = array.pop();
-    console.log(array.join(delimiter));
+    let rotations = Number(array.pop()) % array.length;
+    for (let i = rotations; i > 0; i--) {
+
+        array.unshift(array.pop());
+    }
+
+    console.log(array.join(" "));
 }
+
+rotate(['Banana',
+    'Orange',
+    'Coconut',
+    'Apple',
+    15
+])
