@@ -1,5 +1,4 @@
-function odd(n) {
-    let number = Number(n[0]);
+function odd(number) {
 
     for (let i = 0; i <= number; i++) {
         if(i % 2 != 0) {

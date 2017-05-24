@@ -1,6 +1,4 @@
-function triangle(param) {
-
-    let rows = Number(param[0]);
+function triangle(rows) {
 
     let elements = 1;
 

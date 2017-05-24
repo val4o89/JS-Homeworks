@@ -1,6 +1,4 @@
-function solve(nums) {
-
-    let [a, b, c] = nums.map(Number);
+function solve(a, b, c) {
 
     let root = Math.sqrt(Math.pow(b, 2) - (4 * a * c));
 

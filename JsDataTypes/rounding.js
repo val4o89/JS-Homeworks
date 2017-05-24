@@ -1,5 +1,5 @@
 function round(params) {
-    let number = params[0];
+    let number = params[0].toString();
     let round = Number(params[1]) <= 15 ? Number(params[1]) : 15;
 
     indexOfDot = number.indexOf('.');
@@ -17,4 +17,4 @@ function round(params) {
 
 }
 
-round(['10.5', '3']);
+round(['10.5346346456', '3']);

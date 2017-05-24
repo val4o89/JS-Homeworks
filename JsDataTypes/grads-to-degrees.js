@@ -1,5 +1,4 @@
-function calculate(input){
-    let grad = Number(input[0]);
+function calculate(grad){
     let constant = 360 / 400;
 
     let result = grad * constant;

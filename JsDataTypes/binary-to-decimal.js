@@ -1,5 +1,5 @@
-function toDecimal(params) {
-    let binary = params[0];
+function toDecimal(str) {
+    let binary = str;
 
     let decimal = parseInt(binary, 2);
     console.log(decimal);

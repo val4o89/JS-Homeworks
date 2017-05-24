@@ -1,5 +1,4 @@
-function draw(number) {
-    let n = Number(number[0]);
+function draw(n) {
 
     let line = '';
 

@@ -1,5 +1,4 @@
-function multiplicate(params) {
-    let num = Number(params[0]);
+function multiplicate(num) {
 
     let table = '<table border="1">\n<tr><th>x</th>';
 
