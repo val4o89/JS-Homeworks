@@ -1,18 +1,6 @@
-function draw(params) {
+function draw(number) {
 
-    function cleanArray(actual) {
-        let newArray = new Array();
-        for (let i = 0; i < actual.length; i++) {
-            if (actual[i] &&  !isNaN(actual[i])) {
-                newArray.push(actual[i]);
-            }
-        }
-        return newArray;
-    }
-    params = cleanArray(params);
-
-    let input = params.map(Number);
-    input = input[0];
+    input = number;
 
 
     let dna = '';

@@ -1,18 +1,7 @@
-function matrix(array) {
+function matrix(a, b) {
 
-    function cleanArray(actual) {
-        var newArray = new Array();
-        for (var i = 0; i < actual.length; i++) {
-            if (actual[i]) {
-                newArray.push(actual[i]);
-            }
-        }
-        return newArray;
-    }
-    array = cleanArray(array);
-
-    let rows = Number(array[0]);
-    let cols = Number(array[1]);
+    let rows = a;
+    let cols = b;
 
     let counter = 1;
     let maxElement = rows * cols;

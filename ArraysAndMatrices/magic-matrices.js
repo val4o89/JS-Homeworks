@@ -2,12 +2,6 @@ function magic(array) {
 
     try{
 
-    array = array.filter(isNumber);
-
-    function isNumber(a) {
-        if(a != '')
-            return a;
-    }
 
     function empties(a) {
         if(a != '')
@@ -28,16 +22,6 @@ function magic(array) {
         return a + b;
     }
 
-    function returnMatrix(arr) {
-        let matrix = new Array;
-
-        for (let i = 0; i < arr.length; i++) {
-
-            matrix[i] = arr[i].split(' ').filter(empties).map(Number);
-        }
-
-        return matrix;
-    }
         function isMagical(matrix) {
         let previousSum = -Infinity;
 
@@ -73,17 +57,13 @@ function magic(array) {
         return true;
     }
 
-    //let arr = cleanArray(array);
-    //arr = arr.filter(isNumber);
-    let matrix = returnMatrix(array);
-
-    console.log(isMagical(matrix));
+    console.log(isMagical(array));
     }
     catch(err) {
         console.log(false);
     }
 }
 
-magic(['', zzz,'4 5 6',
-    '6 5 4',
-    '5 5 5', '', ''])
+magic([[4, 5, 6],
+    [6, 5, 4],
+    [5, 5, 5]]);

@@ -1,8 +1,7 @@
-function average(params) {
+function average(strNumber) {
 
     let averageNumber = 0;
-    let strNumber = params[0];
-    let charArrNumbers = strNumber.split("");
+    let charArrNumbers = strNumber.toString().split("");
 
 
     while(averageNumber <= 5){
