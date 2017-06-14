@@ -1,8 +1,5 @@
 function solve(array) {
 
-    function sortPeople() {
-        
-    }
     let people = new Map();
 
     for (let line of array) {
@@ -51,12 +48,15 @@ function solve(array) {
 }
 
 solve([
-    'A',
-    'B',
-    'C',
+    'Z',
+    'O',
+    'R',
     'D',
-    'A-B',
-    'B-A',
-    'C-A',
-    'D-A'
-])
+    'Z-O',
+    'R-O',
+    'D-O',
+    'P',
+    'O-P',
+    'O-Z',
+    'R-Z',
+    'D-Z'])

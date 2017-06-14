@@ -11,8 +11,8 @@ function bunnyKill(array) {
     for (let i = 0; i < bombAllData.length; i++) {
         let bombData = bombAllData[i].split(',').map(Number);
 
-        let x = bombData[0];
-        let y = bombData[1];
+        let x = bombData[0]
+        let y = bombData[1]
 
         for (let i = Math.max(x - 1, 0); i <= Math.min(x + 1, array.length - 1); i++) {
             for (let j = Math.max(y - 1, 0); j <= Math.min(y + 1, array[i].length - 1); j++) {
