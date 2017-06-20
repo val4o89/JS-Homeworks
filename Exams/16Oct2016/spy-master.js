@@ -8,7 +8,8 @@ function solve(array) {
 
     let secretKeyRegex = secretKey.split('').map(x => `[${x.toLowerCase()}${x.toUpperCase()}]`).reduce((a,b) => (a + b));
 
-    let somet = "^\\|\\s*" + secretKeyRegex + "\\s*([A-Z$#%!]{8,})(\\.\\|\\,$\\|\\s)";
+    let somet = '^|[ ]+' + secretKeyRegex + ' [ ]+([A-Z#$!%]{8,})[ ]+|[\.,]|$';
+
     let regex = new RegExp(somet, 'g');
 
     for (let i = 0; i < array.length; i++) {
